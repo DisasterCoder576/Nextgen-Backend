@@ -5,12 +5,7 @@ const express = require('express');
 const getspecificroute = express.Router();
 
 getspecificroute.get('/', (req, res) => { 
-	//res.send('A simple Node App is '
-	//	+ 'running on this server') 
-	//console.log(req.params);
-	console.log(req.query.jobid);
 
-	//res.send("HI1");
     const mongoClient = new customMongoDBWrapper();
 	const alljobs =  mongoClient.getSpecificJob(req.query.jobid).then(
 		result1 => {
