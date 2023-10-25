@@ -18,7 +18,7 @@ postjobroute.get('/', (req, res) => {
 	const alljobs =  mongoClient.postjobapp(req.query.jobid, req.query.email).then(
 		result1 => {
 			console.log(result1);
-			res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+			res.setHeader('Access-Control-Allow-Origin', 'https://jobs-react-d150a.web.app/');
 			res.send(result1);
 		}
 	);
