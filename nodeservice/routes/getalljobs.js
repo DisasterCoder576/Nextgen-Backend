@@ -11,7 +11,7 @@ getallroute.get('/', (req, res) => {
     const mongoClient = new customMongoDBWrapper();
 	const alljobs1 =  mongoClient.getalljobs(skip).then(
 		result1 => {
-			res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+			res.setHeader('Access-Control-Allow-Origin', 'https://jobs-react-d150a.web.app');
 			res.send(result1);
 		}
 	);
