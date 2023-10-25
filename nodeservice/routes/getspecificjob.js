@@ -1,4 +1,4 @@
-var customMongoDBWrapper = require("..\\mongodb-service\\mongo_methods.js");
+var customMongoDBWrapper = require("../mongodb-service/mongo_methods.js");
 
 const express = require('express');
 
